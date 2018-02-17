@@ -1,0 +1,24 @@
+<table class="table table-hover table-bordered">
+	<thead class="thread-dark">
+		<tr>
+			<th>Nome</th>
+			<th>Artista</th>
+			<th>Enviado por</th>
+			<th>Opções</th>
+		</tr>
+	</thead>
+
+	<tbody>
+		<tr v-for="cifra in cifras">
+			<td>{{ cifra.nome }}</td>
+			<td>{{ cifra.artista }}</td>
+			<td>{{ cifra.user }}</td>
+			<td>
+				<button class="btn btn-primary" type="button" data-toggle="modal" data-target="#display-cifra-modal" v-on:click="mostra_cifra(cifra._id)">Visualizar</button>
+
+				<button class="btn btn-success" type="button" data-toggle="modal" data-target="#update-cifra-modal" v-if="cifra.user == user" v-on:click="start_update(cifra._id)">Update</button>
+				<button class="btn btn-danger" type="button" v-if="cifra.user == user" v-on:click="delete_cifra(cifra._id, cifra.nome)">Deletar</button>
+			</td>
+		</tr>
+	</tbody>
+</table>

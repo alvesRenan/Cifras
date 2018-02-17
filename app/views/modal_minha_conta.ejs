@@ -1,0 +1,29 @@
+<div class="modal fade" id="minha-conta-modal">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<!-- cabecalho -->
+			<div class="modal-header">
+				<h4 class="modal-title">Escolha uma opção</h4>
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+			</div>
+
+			<!-- corpo -->
+			<div class="modal-body">
+				<ul>
+					<li>
+						<a href="#/" data-toggle="modal" data-target="#envia-cifra-modal">Enviar cifra</a>
+					</li>
+
+					<li>
+						<a href="#/" v-on:click="listar_cifras()">Listar minhas cifras</a>
+					</li>
+				</ul>
+			</div>
+
+			<!-- rodape -->
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+			</div>
+		</div>
+	</div>
+</div>

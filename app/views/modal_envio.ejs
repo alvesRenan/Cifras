@@ -1,0 +1,21 @@
+<div class="modal fade" id="envia-cifra-modal">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<!-- cabecalho -->
+			<div class="modal-header">
+				<h4 class="modal-title">Escolha uma opção</h4>
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+			</div>
+
+			<!-- corpo -->
+			
+			<% include partials/cifra_form %>
+
+			<!-- rodape -->
+			<div class="modal-footer">
+				<button class="btn btn-success" type="button" v-on:click="envia_cifra()">Submeter</button>
+				<button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
+			</div>
+		</div>
+	</div>
+</div>

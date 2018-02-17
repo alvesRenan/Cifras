@@ -1,0 +1,21 @@
+<div class="modal fade" id="update-cifra-modal">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<!-- cabecalho -->
+			<div class="modal-header">
+				<h4 class="modal-title">Update</h4>
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+			</div>
+
+			<!-- corpo -->
+
+			<% include partials/cifra_form %>
+
+			<!-- rodape -->
+			<div class="modal-footer">
+				<button class="btn btn-success" type="button" v-on:click="update_cifra()">Update</button>
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+			</div>
+		</div>
+	</div>
+</div>
